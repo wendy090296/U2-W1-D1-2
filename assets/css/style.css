@@ -147,6 +147,10 @@ tbody tr:last-of-type {
   border-bottom: 2px solid #3f6bca;
 }
 
+.news h2 {
+  background-color: darkgrey;
+}
+
 /* FORM */
 input {
   padding: 5px;
@@ -201,9 +205,9 @@ footer a {
 }
 
 /* VISUALIZZAZIONE TABLET  */
-@media screen and (min-width: 576px) and (orientation: portrait) {
+@media screen and (min-width: 576px) {
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: -0.03em;
     margin-bottom: 0.7em;
   }
@@ -211,10 +215,70 @@ footer a {
     margin: 6.5rem auto;
   }
   input {
+    width: 70%;
+    padding: 1rem;
+  }
+  button {
+    padding: 10px 10px;
   }
 }
 
 /* VISUALIZZAZIONE DESKTOP */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1.5em;
+    align-items: center;
+  }
+  header div {
+    display: flex;
+    align-items: center;
+  }
+  header div img,
+  header div p {
+    margin: 0;
+  }
+
+  header nav {
+    text-align: right;
+  }
+
+  table {
+    width: 70%;
+  }
+  .wrapper {
+    display: flex;
+  }
+  .wrapper iframe,
+  .wrapper .news {
+    width: 50%;
+  }
+  .wrapper .news {
+    border-radius: 10px;
+  }
+  aside {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  aside h2 {
+    width: 100%;
+    text-align: center;
+  }
+  aside div {
+    width: 33.333%;
+  }
+  main ul li,
+  main ol li {
+    margin-bottom: 5px;
+  }
+  footer div {
+    max-width: 490px;
+    margin: 0 auto;
+  }
 }
